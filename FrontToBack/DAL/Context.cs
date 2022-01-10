@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FrontToBack.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,9 @@ namespace FrontToBack.DAL
            
         }
 
-        public object Products { get; internal set; }
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<SliderDesc> SliderDescs { get; set; }
+
+        public DbSet<Bio> Bios { get; set; }
     }
 }

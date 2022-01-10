@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="wwwroot\Homepage\.git\objects\info\" />
     <Folder Include="wwwroot\Homepage\.git\objects\pack\" />
     <Folder Include="wwwroot\Homepage\.git\refs\tags\" />
