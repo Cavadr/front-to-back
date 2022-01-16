@@ -59,21 +59,25 @@ namespace FrontToBack.Controllers
                 isExistProduct.Count++;
             }
             
-
-            
-            Response.Cookies.Append("basket", JsonConvert.SerializeObject(basketProductList),new CookieOptions{MaxAge=TimeSpan.FromMinutes(14)});
-
-
             return RedirectToAction("Index","Home");
         }
 
         public IActionResult ShowBasket()
         {
             string basket = Request.Cookies["basket"];
+
             List<BasketProduct> products = new List<BasketProduct>();
             if (basket != null)
             {
                 products = JsonConvert.DeserializeObject<List<BasketProduct>>(basket);
+                foreach (var item in products)
+                {
+                   Product product = _context.Products.FirstOrDefault(p => p.Id == item.Id);
+                    item.Price = product.Price;
+                    item.Name = product.Name;
+                    item.ImgUrl = product.ImgUrl;
+                }
+                Response.Cookies.Append("basket", JsonConvert.SerializeObject(products), new CookieOptions { MaxAge = TimeSpan.FromMinutes(14) });
             }
             return View(products);
         }

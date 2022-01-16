@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\AdminArea\Data\" />
+    <Folder Include="Areas\AdminArea\Models\" />
     <Folder Include="wwwroot\Homepage\.git\objects\info\" />
     <Folder Include="wwwroot\Homepage\.git\objects\pack\" />
     <Folder Include="wwwroot\Homepage\.git\refs\tags\" />
