@@ -33,7 +33,7 @@
                         <li class='has-submenu'>
                             Product Types
                             <ul class="submenu8">
-                                <li><a href="">Standart Product</a></li>
+                                <li><a asp-controller="product" asp-action="Index">Standart Product</a></li>
                                 <li style="padding-top: 12px;"><a href="">Groped Product</a></li>
                                 <li style="padding-top: 12px;"><a href="">Variable Product</a></li>
                                 <li style="padding-top: 12px;"><a href="">Virtual Product</a></li>
@@ -181,7 +181,7 @@
             <a href=""><i class=" cavad fas fa-search" style="font-size:19px"></i></a>
         </div>
         <div class="icon2">
-            <a href=""><i class="fas fa-shopping-bag" style="font-size:19px"></i></a>
+            <a asp-controller="basket" asp-action="ShowBasket"><i class="fas fa-shopping-bag" style="font-size:19px"></i></a>
         </div>
         <div class="cart">
             <a href="#"><p>Cart ($0)</p></a>

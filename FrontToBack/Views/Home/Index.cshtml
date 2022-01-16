@@ -19,213 +19,61 @@
 
         <ul class="tabs">
             <li class="tab-link current" data-tab="tab-1">All</li>
-            <li class="tab-link" data-tab="tab-2">Popular</li>
-            <li class="tab-link" data-tab="tab-3">Winter</li>
-            <li class="tab-link" data-tab="tab-4">Various</li>
-            <li class="tab-link" data-tab="tab-5">Exotic</li>
-            <li class="tab-link" data-tab="tab-6">Greens</li>
-            <li class="tab-link" data-tab="tab-7">Cactuses</li>
+            @foreach (var item in Model.categories)
+            {
+                <li class="tab-link" data-tab="tab-2">@item.Name</li>
+            }
         </ul>
 
         <div class="tab">
-            <div id="tab-1" class="tab-content current">
-                <center>
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Majesty Palm</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Foxglove Flower</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Sweet Alyssum</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                        <a href=""><p>Spring Snowflake</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$170</p></a> <br> <br>
-                    </div> <br>
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                        <a href=""><p>Scarlet Sage</p> </a>
-                        <a href=""><p><span class="scarlet">259$</span> $159</p></a>   <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Rock Soapwort</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                        <a href=""><p>Summer Savory</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                        <a href=""><p>Wild Roses</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div>
-                </center>
-            </div>
-            <div id="tab-2" class="tab-content">
-                <center>
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Majesty Palm</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Foxglove Flower</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Sweet Alyssum</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                        <a href=""><p>Spring Snowflake</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$170</p></a> <br> <br>
-                    </div> <br>
-                    <div style="margin-right: 1010px;" class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                        <a href=""><p>Scarlet Sage</p> </a>
-                        <a href=""><p><span class="scarlet">259$</span> 159$</p></a>   <br> <br>
-                    </div>
-            </div>
-
-            </center>
-        </div>
-        <div style="margin-right: 42px;" id="tab-3" class="tab-content">
-            <div id="Winter" class="tabcontent">
-                <center>
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Majesty Palm</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Foxglove Flower</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div class="cost">
-                        <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg" alt="" width="290" height="376.13"></div><br>
-                        <a href=""><p>Sweet Alyssum</p></a>
-                        <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                    </div>
-                </center>
-            </div>
-        </div>
-        <div style="margin-right: 3px;" id="tab-4" class="tab-content">
-            <center>
-                <div class="cost">
-                    <div class="image1"><div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg" alt="" width="290" height="376.13"></div></div><br>
-                    <a href=""><p>ROCK SOAPWORT</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg" alt="" width="290" height="376.13"></div><br>
-                    <a href=""><p>SUMMER SAVORY</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg" alt="" width="290" height="376.13"></div><br>
-                    <a href=""><p>WILD ROSES</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-6-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                    <a href=""><p>COLORFUL TULIPS</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$350</p></a> <br> <br>
-                </div> <br>
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-5-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                    <a href=""><p>WILD CACTUS</p> </a>
-                    <a href=""><p><span class="scarlet">259$</span> $159</p></a>   <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-4-img.jpg" alt="" width="290" height="376.13"></div><br>
-                    <a href=""><p>PINK FLOWER TREE</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$180-$350</p></a> <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-3-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                    <a href=""><p>CACTUS IN ORANGE</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-2-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                    <a href=""><p>ORANGE AMARYLLIS</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
+            @foreach (var item in Model.Products)
+            {
+                <div id="tab-1" class="tab-content current">
+                    <center>
+                        <div class="cost">
+                            <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/@item.ImgUrl" alt="" width="290" height="376.13"></div><br>
+                            <a href=""><p>@item.Name</p></a>
+                            <a asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id"><p style="color: rgb(168, 167, 167);">$@item.Price</p> </a> <br> <br>
+                        </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <div class="cost">
+                            <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg" alt="" width="290" height="376.13"></div><br>
+                            <a href=""><p>@item.Name</p></a>
+                            <a asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id"><p style="color: rgb(168, 167, 167);">@item.Price</p></a> <br> <br>
+                        </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <div class="cost">
+                            <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg" alt="" width="290" height="376.13"></div><br>
+                            <a href=""><p>@item.Name</p></a>
+                            <a asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id"><p style="color: rgb(168, 167, 167);">@item.Price</p></a> <br> <br>
+                        </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <div class="cost">
+                            <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg" alt="" width="290" height="376.13"></div> <br>
+                            <a href=""><p>@item.Name</p></a>
+                            <a asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id"><p style="color: rgb(168, 167, 167);">@item.Price</p></a> <br> <br>
+                        </div> <br>
+                        <div class="cost">
+                            <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg" alt="" width="290" height="376.13"></div> <br>
+                            <a href=""><p>@item.Name</p> </a>
+                            <a asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id"><p><span class="scarlet">259$</span> @item.Price</p></a>   <br> <br>
+                        </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <div class="cost">
+                            <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg" alt="" width="290" height="376.13"></div><br>
+                            <a href=""><p>@item.Name</p></a>
+                            <a asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id"><p style="color: rgb(168, 167, 167);">@item.Price</p></a> <br> <br>
+                        </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <div class="cost">
+                            <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg" alt="" width="290" height="376.13"></div> <br>
+                            <a href=""><p>@item.Name</p></a>
+                            <a asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id"><p style="color: rgb(168, 167, 167);">@item.Price</p></a> <br> <br>
+                        </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <div class="cost">
+                            <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg" alt="" width="290" height="376.13"></div> <br>
+                            <a href=""><p>@item.Name</p></a>
+                            <a asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id"><p style="color: rgb(168, 167, 167);">@item.Price</p></a> <br> <br>
+                        </div>
+                    </center>
                 </div>
-            </center>
+            }
         </div>
-        <div style="margin-right: 342px;" id="tab-5" class="tab-content">
-            <center>
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg" alt="" width="290" height="376.13"></div><br>
-                    <a href=""><p>WILD ROSES</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-6-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                    <a href=""><p>COLORFUL TULIPS</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$350</p></a> <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-2-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                    <a href=""><p>ORANGE AMARYLLIS</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div>
-            </center>
-        </div>
-        <div style="margin-right: 342px;" id="tab-6" class="tab-content">
-            <center>
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg" alt="" width="290" height="376.13"></div><br>
-                    <a href=""><p>SUMMER SAVORY</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-4-img.jpg" alt="" width="290" height="376.13"></div><br>
-                    <a href=""><p>PINK FLOWER TREE</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$180-$350</p></a> <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg" alt="" width="290" height="376.13"></div><br>
-                    <a href=""><p>SCHEFFLERA</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div>
-            </center>
-        </div>
-        <div style="margin-right: 300px;" id="tab-7" class="tab-content">
-            <center>
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg" alt="" width="290" height="376.13"></div><br>
-                    <a href=""><p>ROCK SOAPWORT</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-5-img.jpg" alt="" width="290" height="376.13"></div> <br>
-                    <a href=""><p>WILD CACTUS</p> </a>
-                    <a href=""><p><span class="scarlet">259$</span> $159</p></a>   <br> <br>
-                </div> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <div class="cost">
-                    <div class="image1"><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-3-img.jpg" alt="" width="290" height="376.13"> </div><br>
-                    <a href=""><p>CACTUS IN ORANGE</p></a>
-                    <a href=""><p style="color: rgb(168, 167, 167);">$259</p></a> <br> <br>
-                </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            </center>
-        </div>
-    </div>
 </section>
 
 

@@ -127,3 +127,6 @@ C:\Users\cavad\source\repos\FrontToBack\FrontToBack\bin\Debug\netcoreapp3.1\runt
 C:\Users\cavad\source\repos\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\cavad\source\repos\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
 C:\Users\cavad\source\repos\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Users\cavad\source\repos\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\cavad\source\repos\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ProductPartial.cshtml.g.cs
+C:\Users\cavad\source\repos\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Basket\ShowBasket.cshtml.g.cs

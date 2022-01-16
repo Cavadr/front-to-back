@@ -16,6 +16,8 @@ namespace FrontToBack.DAL
 
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<SliderDesc> SliderDescs { get; set; }
+        public DbSet<Category> categories { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         public DbSet<Bio> Bios { get; set; }
     }

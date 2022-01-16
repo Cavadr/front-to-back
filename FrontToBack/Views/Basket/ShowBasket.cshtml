@@ -1,0 +1,30 @@
+﻿@model List<BasketProduct>
+@{
+    Layout = null;
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Count</th>
+            <th scope="col">Settings</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">
+                    <img width="200px" height="200px" src="~/Homepage/tabimages/@itemImgUrl." />
+                </th>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>@item.Count</td>
+                <td>X</td>
+            </tr>
+        }
+    </tbody>
+</table>
